@@ -1,0 +1,324 @@
+.rest{
+    display: flex;
+}
+
+.sticky{
+    height: 50px;
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color:#fe0e2e75;
+    z-index: 100;
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    
+   
+}
+
+body{
+    overflow: hidden;
+    background-color: #fff;
+
+}
+.sticky img{
+    border-radius: 50%;
+}
+.sticky h2{
+    font-family: Georgia;
+    font-weight: 1100;
+    margin-left: 20px;
+    position: relative;
+    bottom: 8px;
+
+}
+.l{
+    width: 25%;
+    display: flex;
+}
+
+.c{
+    width: 50%;
+}
+.r{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-size: larger;
+   
+}
+
+.r i{
+    margin-right: 10px;
+}
+.c #search{
+    width: 75%;
+    height: 100%;
+    border: 2px solid rgba(11, 240, 95, 0.264);
+    border-radius: 2rem;
+    margin-left: 80px;
+}
+.r button{
+    border: none;
+    width: 70px;
+    height: 90%;
+    border-radius: 2rem;
+    font-weight: 900;
+    font-size: 15px;
+    align-self: center;
+    margin-left: 120px;
+}
+
+.r .signup{
+    border: none;
+    width: 90px;
+    height: 90%;
+    border-radius: 2rem;
+    font-weight: 900;
+    font-size: 15px;
+    align-self: center;
+    margin-left: 40px;
+
+}
+.sidebar{
+    width: 16%;
+  
+    border-radius: 1rem;
+    height: 100vh;
+    margin-right: 5px;
+}
+.main{
+    width: 55%;
+    height: 100vh;
+    overflow: scroll;
+}
+
+.rightbar{
+    width: 20%;
+    height: 100vh;
+    background-color: #F5F5F5;
+}
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    
+    background-color:#F5F5F5 ;
+}
+
+.sidebar .home{
+    margin: 30px 0px 5px 30px;
+    
+}
+.sidebar .home .fa-solid {
+    font-size: x-large;
+}
+
+ .sidebar .home button{
+    margin: 10px;
+    border: 2px solid black;
+    background-color: ;
+    outline: none;
+    border-radius: 10px;
+    font-size: larger;
+    padding: 5px;
+ }
+
+ .sidebar .prof .fa-solid {
+    font-size: x-large;
+ 
+}
+
+ .sidebar .prof button{
+  
+    border: 2px solid black;
+    background-color: ;
+    outline: none;
+    border-radius: 10px;
+    font-size: larger;
+    padding: 5px;
+    margin-left: 15px;
+    margin-top: 20px;
+
+ }
+ .sidebar .prof{
+    margin-left: 30px;
+    
+ }
+ .box{
+    background-color: rgba(204, 157, 28, 0.268);
+    border-radius: 1rem;
+    padding: 20px;
+    padding-bottom: 60px;
+    margin-top: 5px;
+ }
+
+.main{
+    height: 100vh;
+    width: 60%;
+    background-color: #F5F5F5;
+  
+}
+#pop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0, .75);
+    backdrop-filter: blur(8px);
+
+}
+
+.popup{
+    display: none;
+  
+
+}
+.res{
+    padding-left: 10px;
+}
+
+.res button{
+    border: 2px solid black;
+    background-color: ;
+    outline: none;
+    border-radius: 10px;
+    font-size: large;
+    padding: 5px;
+    margin-left: 15px;
+    margin-top: 20px;
+
+}
+
+.res i{
+    font-size:large;
+}
+
+
+.post button{
+    border: 2px solid black;
+    background-color: ;
+    outline: none;
+    border-radius: 10px;
+    font-size: larger;
+    padding: 5px;
+    margin-left: 15px;
+    margin-top: 20px;
+
+}
+.post i{
+    font-size: x-large;
+}
+.help button{
+    border: 2px solid black;
+    background-color: ;
+    outline: none;
+    border-radius: 10px;
+    font-size: larger;
+    padding: 5px;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+.help i{
+    margin-left: 5px;
+    font-size: x-large;
+}
+
+/* .box1{
+    background-color: rgba(29, 157, 57, 0.5);
+    border-radius: 1rem;
+    padding: 10px;
+    padding-bottom: 20px;
+    margin-top: 5px;
+    margin-top: 150px;
+ } */
+
+.rightbar h2{
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 20px;
+
+}
+
+.com{
+    background-color:  rgba(204, 157, 28, 0.314);
+    padding: 20px;
+    margin: 5px;
+    border-radius: 1rem;
+}
+
+.post-box {
+    background: rgba(196, 143, 143, 0.144);
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.post-box textarea {
+    width: 98%;
+    height: 70px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 8px;
+    resize: none;
+}
+
+#postBtn {
+    width: 100px;
+    padding: 8px;
+    background: #365bf16f;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-left: 700px;
+}
+
+#postBtn:hover {
+    background: #15057b;
+}
+
+.post {
+    background: rgba(196, 143, 143, 0.082);
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+#imageInput{
+    margin-top: 5px;
+    padding: 6px;
+    border: 1px solid #fff;
+    border-radius: 6px;
+}
+
+.post-img {
+    width: 100%;
+    max-height: 260px;
+    margin-top: 10px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
