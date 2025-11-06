@@ -101,7 +101,7 @@ header .button{
 }
 
 .banner .content .model{
-    background-image: url(assets/download.jpg);
+    background-image: url(../assets/download.jpg);
     width: 100%;
     border-radius: 75%;
     height: 70vh;
