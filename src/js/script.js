@@ -53,6 +53,8 @@ saveProfile.addEventListener("click", () => {
 
   loginPopup.style.display = "none"; 
   loginBtn.innerHTML = `<i class="fa-solid fa-user"></i> ${name}`;
+});
+
 
 
 
