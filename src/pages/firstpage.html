@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: o;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: rgb(84, 187, 146);
+        background-image: repeating-linear-gradient(
+            to right,
+            transparent 0 100px,
+            #20233822 100px 101px
+          ),
+          repeating-linear-gradient(
+            to bottom,
+            transparent 0 100px,
+            #25283b22 100px 101px
+          );
+      }
+      body::before {
+        width: min(1600px, 100vw);
+        height: 100%;
+        top: 0;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+        content: "";
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(assets/download8.jpg);
+        pointer-events: none;
+        padding: 0;
+        margin: 0;
+        object-fit: cover;
+        
+      }
+    </style>
+    <link rel="stylesheet" href="firstpage.css" />
+  </head>
+  <body style="background-color: rgba(146, 44, 44, 0.055)">
+    
+    <div class="banner">
+      <header>
+
+        <div>
+          <img src="assets/logofarmio.png"  alt="farmio logo" class="logo"/>
+        </div>
+       <div class="button">
+          <i class="fa-solid fa-user"></i>
+          <span class="username" id="usernameDisplay"></span>
+
+
+          <button id="loginBtn" class="login-btn">
+            <i class="fa-solid fa-user"></i> Login
+          </button>
+       </div>
+
+
+      </header>
+      <div class="slider" style="--quantity: 10">
+        <div class="item" style="--position: 1">
+          <img src="assets/logofarmioundefined (1).jpg" alt="" />
+        </div>
+        <div class="item" style="--position: 2">
+          <img src="assets/logofarmioundefined (2).jpg" alt="" />
+        </div>
+        <div class="item" style="--position: 3">
+          <img src="assets/undefined (4).jpg" alt="" />
+        </div>
+        <div class="item" style="--position: 4">
+          <img src="assets/undefined (5).jpg" alt="" />
+        </div>
+        <div class="item" style="--position: 5">
+          <img src="assets/undefined (7).jpg" alt="" />
+        </div>
+        <div class="item" style="--position: 6">
+          <img src="assets/undefined(9).jpg" alt="" />
+        </div>
+        <div class="item" style="--position: 7">
+          <img src="assets/kisan.jpg" alt="" />
+        </div>
+        <div class="item" style="--position: 8">
+          <img src="assets/download9.jpg" alt="" />
+        </div>
+        <div class="item" style="--position: 9">
+          <img src="assets/downloade7.jpg" alt="" />
+        </div>
+        <div class="item" style="--position: 10">
+          <img src="assets/undefined.jpg" alt="" />
+        </div>
+        <div class="page"></div>
+
+      </div>
+
+      <div class="content">
+          <h1 data-content="FARMIO">FARMIO</h1>
+            <div class="author">
+              <h2>FARMIO</h2>
+              <p>connect share and grow</p>
+            </div>
+            <div class="model">
+
+            </div>
+          </div>
+        </div>
+    
+      </div>
+
+      <div id="loginPopup" class="popup">
+          <div class="popup-box">
+            <h2>Welcome to Farmio</h2>
+
+            <input type="text" id="nameInput" placeholder="Your Name">
+            <input type="text" id="districtInput" placeholder="Your District">
+            <input type="text" id="cropInput" placeholder="Main Crop">
+
+          <button id="saveProfile">Login</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
