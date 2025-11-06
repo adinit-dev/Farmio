@@ -206,37 +206,47 @@ header {
 
 .popup {
   position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(0,0,0,.5);
-  display: none;
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(8px);
+  display: none; /* stays hidden unless JS shows it */
   justify-content: center;
   align-items: center;
-  backdrop-filter: blur(6px);
-  z-index: 100;
+  z-index: 9999; /* ensure always on top */
 }
 
 .popup-box {
-  background: white;
-  padding: 20px;
-  border-radius: 12px;
-  width: 300px;
+  background: rgba(255,255,255,0.18);
+  backdrop-filter: blur(14px);
+  padding: 30px;
+  border-radius: 14px;
+  width: 340px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 14px;
   text-align: center;
-  z-index: 100;
+  border: 1px solid rgba(255,255,255,0.35);
+  box-shadow: 0 10px 35px rgba(0,0,0,0.4);
 }
+
 .popup-box input {
-  padding: 8px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: rgba(255,255,255,0.55);
 }
+
 .popup-box button {
-  background: #2b7a0b;
+  background: #1fa32d;
   color: white;
   border: none;
-  padding: 10px;
-  border-radius: 6px;
+  padding: 12px;
+  border-radius: 8px;
   cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
 }
