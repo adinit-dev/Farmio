@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farmio-Profile</title>
+  <link rel="stylesheet" href="../css/profile.css">
+  <link rel="icon" type="image/png" href="../assets/farmiologo_png.png">
+</head>
+
+<body>
+
+<div class="profile-container">
+
+    <div class="profile-header">
+      <img src="../assets/default_user.png" id="profile-img">
+      <h2 class="profile-name">Aditya</h2>
+      <p class="profile-role">Farmer</p>
+      <button class="edit-btn">Edit Profile</button>
+    </div>
+
+    <div class="profile-details">
+      <h3>About</h3>
+      <p id="bio">I am experience of more than 6 years of agriculture.I had grown various types of crop and mainly paddy.</p>
+    </div>
+
+    <div class="profile-stats">
+      <div><b id="postCount">5</b><span>Posts</span></div>
+      <div><b>India</b><span>Location</span></div>
+    </div>
+
+</div>
+
+  <div class="edit-popup" id="editPopup">
+    <div class="edit-box">
+      <h3>Edit Profile</h3>
+
+      <label>Name</label>
+      <input type="text" id="editName">
+
+      <label>Bio</label>
+      <textarea id="editBio" rows="3"></textarea>
+
+      <label>Profile Picture</label>
+      <input type="file" id="editImage" accept="image/*">
+
+      <div class="btns">
+        <button id="saveBtn">Save</button>
+        <button id="closeBtn" class="cancel">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script4.js"></script>
+</body>
+</html>
