@@ -42,7 +42,4 @@ No experts talking down. Just farmers helping farmers.
 
 No heavy frameworks. Fast, lightweight, and focused.
 
----
-
-## 📂 Project Structure
 
